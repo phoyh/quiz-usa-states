@@ -1,0 +1,776 @@
+DIM l(21),l$(21),g$(21),g(5),s(21),b(21),f(5),a(5),i(5),ddd(5),c(5),menge(5),k(21,7)
+l(1)=3:l(2)=15:l(3)=15:l(4)=15:l(5)=3
+l(6)=7:l(7)=3:l(8)=15:l(9)=7:l(10)=7
+l(11)=8:l(12)=7:l(13)=7:l(14)=1:l(15)=8
+l(16)=1:l(17)=1:l(18)=8:l(19)=1:l(20)=7
+l(21)=8:jahr=1790:p2=1:p=1
+SCREEN 1,330,256,5,1
+WINDOW 2,,,16,1
+PAINT (2,2),4
+VANCOUVER:
+LINE (64/p2,12+p)-(59,-1+p),l(1)
+LINE -(16/p2,-1+p),l(1)
+LINE -(20/p2,10+p),l(1)
+LINE -(30/p2,10+p),l(1)
+LINE -(64/p2,12+p),l(1)
+PAINT (59/p2,11+p),l(1)
+ALBERTASASKATCHANMANITOBA:
+LINE (64/p2,12+p)-(59,-1+p),l(2)
+LINE -(130/p2,-1+p),l(2)
+LINE -(127/p2,15+p),l(2)
+LINE -(64/p2,12+p),l(2)
+PAINT (100/p2,0+p),l(2)
+ONTARIO:
+LINE (130/p2,(-1+p))-(127/p2,(15+p)/p2),l(3)
+LINE -(140/p2,(16+p)/p2),l(3)
+LINE -(145/p2,(10+p)/p2),l(3)
+LINE -(151/p2,(10+p)/p2),l(3)
+LINE -(154/p2,(14+p)/p2),l(3)
+LINE -(159/p2,(13+p)/p2),l(3)
+LINE -(162/p2,(22+p)/p2),l(3)
+LINE -(173/p2,(24+p)/p2),l(3)
+LINE -(182/p2,(20+p)/p2),l(3)
+LINE -(177/p2,(24+p)/p2),l(3)
+LINE -(182/p2,(28+p)/p2),l(3)
+LINE -(176/p2,(29+p)/p2),l(3)
+LINE -(176/p2,(38+p)/p2),l(3)
+LINE -(173/p2,(47+p)/p2),l(3)
+LINE -(185/p2,(41+p)/p2),l(3)
+LINE -(186/p2,(39+p)/p2),l(3)
+LINE -(184/p2,(39+p)/p2),l(3)
+LINE -(186/p2,(39+p)/p2),l(3)
+LINE -(184/p2,(39+p)/p2),l(3)
+LINE -(186/p2,(36+p)/p2),l(3)
+LINE -(195/p2,(32+p)/p2),l(3)
+LINE -(196/p2,(34+p)/p2),l(3)
+LINE -(201/p2,(29+p)/p2),l(3)
+LINE -(185/p2,(20+p)/p2),l(3)
+LINE -(185/p2,(-1+p)/p2),l(3)
+LINE -(130/p2,(-1+p)/p2),l(3)
+PAINT (160/p2,(0+p)/p2),l(3)
+QUEBECK:
+LINE (201,29+p)-(185,20+p),l(4)
+LINE -(185,-1+p),l(4)
+LINE -(210,-1+p),l(4)
+LINE -(199,19+p),l(4)
+LINE -(215,-1+p),l(4)
+LINE -(226,-1+p),l(4)
+LINE -(231,14+p),l(4)
+LINE -(245,14+p),l(4)
+LINE -(246,5+p),l(4)
+LINE -(253,9+p),l(4)
+LINE -(240,25+p),l(4)
+LINE -(236,33+p),l(4)
+LINE -(233,32+p),l(4)
+LINE -(233,27+p),l(4)
+LINE -(236,16+p),l(4)
+LINE -(227,26+p),l(4)
+LINE -(219,13+p),l(4)
+LINE -(217,15+p),l(4)
+LINE -(215,13+p),l(4)
+LINE -(214,27+p),l(4)
+LINE -(201,29+p),l(4)
+PAINT (216,0+p),l(4)
+WASHINGTONOREGON:
+LINE (30,10+p)-(20,10+p),l(5)
+LINE -(11,46+p),l(5)
+LINE -(38,53+p),l(5)
+LINE -(48,12+p),l(5)
+LINE -(30,10+p),l(5)
+PAINT (25,11+p),l(5)
+KALIFORNIENNEVADA:
+LINE (50,55+p)-(38,53+p),l(6)
+LINE -(11,46+p),l(6)
+LINE -(10,55+p),l(6)
+LINE -(15,92+p),l(6)
+LINE -(25,95+p),l(6)
+LINE -(30,105+p),l(6)
+LINE -(40,106+p),l(6)
+LINE -(45,86+p),l(6)
+LINE -(57,86+p),l(6)
+LINE -(58,85+p),l(6)
+LINE -(47,84+p),l(6)
+LINE -(50,55+p),l(6)
+PAINT (44,55+p),l(6)
+UTAHCOLORADO:
+LINE (50,55+p)-(47,84+p),l(9)
+LINE -(58,85+p),l(9)
+LINE -(96,87+p),l(9)
+LINE -(99,88+p),l(9)
+LINE -(100,67+p),l(9)
+LINE -(89,66+p),l(9)
+LINE -(61,64+p),l(9)
+LINE -(62,58+p),l(9)
+LINE -(50,55+p),l(9)
+PAINT (50,83+p),l(9)
+IdahoWyoming:
+LINE (48,12+p)-(38,53+p),l(7)
+LINE -(62,58+p),l(7)
+LINE -(61,64+p),l(7)
+LINE -(89,66+p),l(7)
+LINE -(90,45+p),l(7)
+LINE -(63,42+p),l(7)
+LINE -(63,43+p),l(7)
+LINE -(58,43+p),l(7)
+LINE -(50,12+p),l(7)
+LINE -(48,12+p),l(7)
+PAINT (48,40+p),l(7)
+Montana:
+LINE (50,12+p)-(58,43+p),l(8)
+LINE -(63,43+p),l(8)
+LINE -(63,42+p),l(8)
+LINE -(90,45+p),l(8)
+LINE -(91,14+p),l(8)
+LINE -(50,12+p),l(8)
+PAINT (58,20+p),l(8)
+ArizonaNewMexiko:
+LINE (58,85+p)-(57,86+p),l(9)
+LINE -(45,86+p),l(10)
+LINE -(40,106+p),l(10)
+LINE -(55,115+p),l(10)
+LINE -(68,118+p),l(10)
+LINE -(68,112+p),l(10)
+LINE -(78,114+p),l(10)
+LINE -(78,113+p),l(10)
+LINE -(93,114+p),l(10)
+LINE -(96,87+p),l(10)
+LINE -(58,85+p),l(10)
+PAINT (45,106+p),l(10)
+Neuenglandstaaten:
+LINE (199,72+p)-(180,74+p),l(11)
+LINE -(178,50+p),l(11)
+LINE -(184,47+p),l(11)
+LINE -(186,42+p),l(11)
+LINE -(186,39+p),l(11)
+LINE -(196,40+p),l(11)
+LINE -(196,34+p),l(11)        
+LINE -(201,29+p),l(11)
+LINE -(214,27+p),l(11)
+LINE -(215,13+p),l(11)
+LINE -(217,15+p),l(11)
+LINE -(219,13+p),l(11)
+LINE -(227,26+p),l(11)
+LINE -(217,36+p),l(11)
+LINE -(217,43+p),l(11)
+LINE -(222,50+p),l(11)
+LINE -(214,54+p),l(11)
+LINE -(210,59+p),l(11)
+LINE -(214,56+p),l(11)
+LINE -(210,61+p),l(11)
+LINE -(206,71+p),l(11)
+LINE -(202,69+p),l(11)
+LINE -(206,73+p),l(11)
+LINE -(203,83+p),l(11)
+LINE -(202,86+p),l(11)
+LINE -(199,77+p),l(11)
+LINE -(199,72+p),l(11)
+PAINT (200,73+p),l(11)
+TexasOklahoma:
+LINE (78,114+p)-(78,113+p),l(12)
+LINE -(93,114+p),l(12)
+LINE -(96,87+p),l(12)
+LINE -(99,88+p),l(12)
+LINE -(143,89+p),l(12)
+LINE -(145,106+p),l(12)
+LINE -(148,106+p),l(12)
+LINE -(153,127+p),l(12)
+LINE -(148,124+p),l(12)
+LINE -(148,126+p),l(12)
+LINE -(142,125+p),l(12)
+LINE -(135,127+p),l(12)
+LINE -(122,137+p),l(12)
+LINE -(122,147+p),l(12)
+LINE -(112,144+p),l(12)
+LINE -(110,137+p),l(12)
+LINE -(101,125+p),l(12)
+LINE -(96,124+p),l(12)
+LINE -(93,129+p),l(12)
+LINE -(87,125+p),l(12)
+LINE -(86,119+p),l(12)
+LINE -(78,114+p),l(12)
+PAINT (120,90+p),l(12)
+DakotaNebraska:
+LINE (91,14+p)-(90,45+p),l(14)
+LINE -(89,66+p),l(14)
+LINE -(100,67+p),l(14)
+LINE -(100,73+p),l(14)
+LINE -(128,75+p),l(14)
+LINE -(125,68+p),l(14)
+LINE -(121,15+p),l(14)
+LINE -(91,14+p),l(14)
+PAINT (110,16+p),l(14)
+KentuckyTennesseVirginia:
+LINE (164,101+p)-(155,101+p),l(15)
+LINE -(160,82+p),l(15)
+LINE -(170,75+p),l(15)
+LINE -(178,80+p),l(15)
+LINE -(180,74+p),l(15)
+LINE -(198,73+p),l(15)
+LINE -(197,83+p),l(15)
+LINE -(198,87+p),l(15)
+LINE -(204,89+p),l(15)
+LINE -(192,93+p),l(15)
+LINE -(177,100+p),l(15)
+LINE -(164,101+p),l(15)
+PAINT (160,100+p),l(15)
+KansasMissouriIllinois:
+LINE (143,89+p)-(99,88+p),l(16)
+LINE -(100,73+p),l(16)
+LINE -(128,75+p),l(16)
+LINE -(126,72+p),l(16)
+LINE -(143,71+p),l(16)
+LINE -(146,53+p),l(16)
+LINE -(153,50+p),l(16)
+LINE -(154,51+p),l(16)
+LINE -(160,82+p),l(16)
+LINE -(158,91+p),l(16)
+LINE -(157,96+p),l(16)
+LINE -(153,96+p),l(16)
+LINE -(154,94+p),l(16)
+LINE -(142,92+p),l(16)
+LINE -(143,89+p),l(16)
+PAINT (120,80+p),l(16)
+MinnesotaIowaWisconsin:
+LINE (121,15+p)-(140,16+p),l(17)
+LINE -(131,26+p),l(17)
+LINE -(136,24+p),l(17)
+LINE -(136,25+p),l(17)
+LINE -(150,38+p),l(17)
+LINE -(150,42+p),l(17)
+LINE -(153,50+p),l(17)
+LINE -(146,53+p),l(17)
+LINE -(143,71+p),l(17)
+LINE -(126,72+p),l(17)
+LINE -(125,68+p),l(17)
+LINE -(121,15+p),l(17)
+PAINT (130,20+p),l(17)
+MichiganIndinanaOhio:
+LINE (136,25+p)-(147,20+p),l(18)
+LINE -(148,24+p),l(18)
+LINE -(152,26+p),l(18)
+LINE -(158,24+p),l(18)
+LINE -(163,26+p),l(18)
+LINE -(158,24+p),l(18)
+LINE -(163,26+p),l(18)
+LINE -(152,30+p),l(18)
+LINE -(150,38+p),l(18)
+LINE -(136,25+p),l(18)
+PAINT (144,22+p),l(18)
+LINE (154,51+p)-(160,82+p),l(18)
+LINE -(170,76+p),l(18)
+LINE -(178,80+p),l(18)
+LINE -(180,74+p),l(18)
+LINE -(178,50+p),l(18)
+LINE -(172,53+p),l(18)
+LINE -(173,52+p),l(18)
+LINE -(166,52+p),l(18)
+LINE -(168,51+p),l(18)
+LINE -(172,41+p),l(18)
+LINE -(170,37+p),l(18)
+LINE -(169,37+p),l(18)
+LINE -(167,40+p),l(18)
+LINE -(167,31+p),l(18)
+LINE -(160,30+p),l(18)
+LINE -(156,40+p),l(18)
+LINE -(158,50+p),l(18)
+LINE -(158,51+p),l(18)
+LINE -(154,51+p),l(18)
+PAINT (156,52+p),l(18)
+ARKANSASLOUSIANAMISSISSIPPI:
+LINE (142,92+p)-(154,94+p),l(19)
+LINE -(153,96+p),l(19)
+LINE -(156,96+p),l(19)
+LINE -(155,101+p),l(19)
+LINE -(164,101+p),l(19)
+LINE -(163,121+p),l(19)
+LINE -(150,122+p),l(19)
+LINE -(155,127+p),l(19)
+LINE -(153,127+p),l(19)
+LINE -(148,106+p),l(19)
+LINE -(145,106+p),l(19)
+LINE -(142,92+p),l(19)
+PAINT (148,100+p),l(19)
+FLORIDA:
+LINE (163,121+p)-(173,121+p),l(20)
+LINE -(175,124+p),l(20)
+LINE -(179,121+p),l(20)
+LINE -(187,127+p),l(20)
+LINE -(187,131+p),l(20)
+LINE -(189,139+p),l(20)
+LINE -(194,149+p),l(20)
+LINE -(197,149+p),l(20)
+LINE -(198,141+p),l(20)
+LINE -(189,118+p),l(20)
+LINE -(163,118+p),l(20)
+LINE -(163,121+p),l(20)
+PAINT (164,119+p),l(20)
+ALABAMAGEORGIACAROLINA:
+LINE (163,118+p)-(189,118+p),l(21)
+LINE -(189,113+p),l(21)
+LINE -(192,106+p),l(21)
+LINE -(197,102+p),l(21)
+LINE -(204,100+p),l(21)
+LINE -(201,100+p),l(21)
+LINE -(203,98+p),l(21)
+LINE -(203,97+p),l(21)
+LINE -(201,96+p),l(21)
+LINE -(206,93+p),l(21)
+LINE -(201,93+p),l(21)
+LINE -(205,91+p),l(21)
+LINE -(204,89+p),l(21)
+LINE -(192,93+p),l(21)
+LINE -(177,100+p),l(21)
+LINE -(164,101+p),l(21)
+LINE -(163,118+p),l(21)
+PAINT (165,110+p),l(21)
+MEXIKO:
+LINE (30,105+p)-(40,106+p),l(13)
+LINE -(55,115+p),l(13)
+LINE -(68,118+p),l(13)
+LINE -(68,112+p),l(13)
+LINE -(78,114+p),l(13)
+LINE -(86,119+p),l(13)
+LINE -(87,125+p),l(13)
+LINE -(93,129+p),l(13)
+LINE -(96,121+p),l(13)
+LINE -(101,125+p),l(13)
+LINE -(110,137+p),l(13)
+LINE -(112,144+p),l(13)
+LINE -(122,147+p),l(13)
+LINE -(118,152+p),l(13)
+LINE -(118,165+p),l(13)
+LINE -(79,165+p),l(13)
+LINE -(64,145+p),l(13)
+LINE -(66,140+p),l(13)
+LINE -(58,131+p),l(13)
+LINE -(53,119+p),l(13)
+LINE -(50,115+p),l(13)
+LINE -(39,113+p),l(13)
+LINE -(39,123+p),l(13)
+LINE -(41,123+p),l(13)
+LINE -(50,143+p),l(13)
+LINE -(53,143+p),l(13)
+LINE -(62,156+p),l(13)
+LINE -(59,159+p),l(13)
+LINE -(48,144+p),l(13)
+LINE -(43,144+p),l(13)
+LINE -(38,137+p),l(13)
+LINE -(42,138+p),l(13)
+LINE -(41,129+p),l(13)
+LINE -(38,129+p),l(13)
+LINE -(33,120+p),l(13)
+LINE -(30,105+p),l(13)
+PAINT (100,164+p),l(13)
+DATUM:
+COLOR 0,4
+LOCATE 19,19:PRINT jahr
+COLOR 1,0
+LINE (30,105+p)-(40,106+p),0
+LINE -(55,115+p),0
+LINE -(68,118+p),0
+LINE -(68,112+p),0
+LINE -(78,114+p),0
+LINE -(86,119+p),0
+LINE -(87,125+p),0
+LINE -(93,129+p),0
+LINE -(96,121+p),0
+LINE -(101,125+p),0
+LINE -(110,137+p),0
+LINE -(112,144+p),0
+LINE -(122,147+p),0
+LINE -(118,152+p),0
+LINE -(118,165+p),0
+LINE -(79,165+p),0
+LINE -(64,145+p),0
+LINE -(66,140+p),0
+LINE -(58,131+p),0
+LINE -(53,119+p),0
+LINE -(50,115+p),0
+LINE -(39,113+p),0
+LINE -(39,123+p),0
+LINE -(41,123+p),0
+LINE -(50,143+p),0
+LINE -(53,143+p),0
+LINE -(62,156+p),0
+LINE -(59,159+p),0
+LINE -(48,144+p),0
+LINE -(43,144+p),0
+LINE -(38,137+p),0
+LINE -(42,138+p),0
+LINE -(41,129+p),0
+LINE -(38,129+p),0
+LINE -(33,120+p),0
+LINE -(30,105+p),0
+LINE (163,118+p)-(189,118+p),0
+LINE -(189,113+p),0
+LINE -(192,106+p),0
+LINE -(197,102+p),0
+LINE -(204,100+p),0
+LINE -(201,100+p),0
+LINE -(203,98+p),0
+LINE -(203,97+p),0
+LINE -(201,96+p),0
+LINE -(206,93+p),0
+LINE -(201,93+p),0
+LINE -(205,91+p),0
+LINE -(204,89+p),0
+LINE -(192,93+p),0
+LINE -(177,100+p),0
+LINE -(164,101+p),0
+LINE -(163,118+p),0
+LINE (163,121+p)-(173,121+p),0
+LINE -(175,124+p),0
+LINE -(179,121+p),0
+LINE -(187,127+p),0
+LINE -(187,131+p),0
+LINE -(189,139+p),0
+LINE -(194,149+p),0
+LINE -(197,149+p),0
+LINE -(198,141+p),0
+LINE -(189,118+p),0
+LINE -(163,118+p),0
+LINE -(163,121+p),0
+LINE (155,101+p)-(164,101+p),0
+LINE -(163,121+p),0
+LINE -(150,122+p),0
+LINE -(155,127+p),0
+LINE -(153,127+p),0
+LINE -(148,106+p),0
+LINE (154,51+p)-(160,82+p),0
+LINE (172,53+p)-(173,52+p),0
+LINE -(166,52+p),0
+LINE -(168,51+p),0
+LINE -(172,41+p),0
+LINE -(170,37+p),0
+LINE -(169,37+p),0
+LINE -(167,40+p),0
+LINE -(167,31+p),0
+LINE -(160,30+p),0
+LINE -(156,40+p),0
+LINE -(158,50+p),0
+LINE -(158,51+p),0
+LINE -(154,51+p),0
+LINE (136,25+p)-(147,20+p),0
+LINE -(148,24+p),0
+LINE -(152,26+p),0
+LINE -(158,24+p),0
+LINE -(163,26+p),0
+LINE -(158,24+p),0
+LINE -(163,26+p),0
+LINE -(152,30+p),0
+LINE -(150,38+p),0
+LINE -(136,25+p),0
+LINE (140,16+p)-(131,26+p),0
+LINE -(136,24+p),0
+LINE -(136,25+p),0
+LINE -(150,38+p),0
+LINE -(150,42+p),0
+LINE -(153,50+p),0
+LINE -(146,53+p),0
+LINE -(143,71+p),0
+LINE -(126,72+p),0
+LINE -(125,68+p),0
+LINE -(121,15+p),0
+LINE (143,89+p)-(99,88+p),0
+LINE -(100,73+p),0
+LINE -(128,75+p),0
+LINE -(126,72+p),0
+LINE -(143,71+p),0
+LINE -(146,53+p),0
+LINE -(153,50+p),0
+LINE -(154,51+p),0
+LINE -(160,82+p),0
+LINE -(158,91+p),0
+LINE -(157,96+p),0
+LINE -(153,96+p),0
+LINE -(154,94+p),0
+LINE -(142,92+p),0
+LINE -(143,89+p),0
+LINE (164,101+p)-(155,101+p),0
+LINE -(160,82+p),0
+LINE -(170,75+p),0
+LINE -(178,80+p),0
+LINE -(180,74+p),0
+LINE (199,77+p)-(197,81+p),0
+LINE -(198,86+p),0
+LINE -(204,89+p),0
+LINE -(192,93+p),0
+LINE -(177,100+p),0
+LINE -(164,101+p),0
+LINE (91,14+p)-(90,45+p),0
+LINE -(89,66+p),0
+LINE -(100,67+p),0
+LINE -(100,73+p),0
+LINE -(128,75+p),0
+LINE -(125,68+p),0
+LINE -(121,15+p),0
+LINE -(91,14+p),0
+LINE (78,114+p)-(78,113+p),0
+LINE -(93,114+p),0
+LINE -(96,87+p),0
+LINE -(99,88+p),0
+LINE -(143,89+p),0
+LINE -(145,106+p),0
+LINE -(148,106+p),0
+LINE -(153,127+p),0
+LINE -(148,124+p),0
+LINE -(148,126+p),0
+LINE -(142,125+p),0
+LINE -(135,127+p),0
+LINE -(122,137+p),0
+LINE -(122,147+p),0
+LINE -(112,144+p),0
+LINE -(110,137+p),0
+LINE -(101,125+p),0
+LINE -(96,124+p),0
+LINE -(93,129+p),0
+LINE -(87,125+p),0
+LINE -(86,119+p),0
+LINE -(78,114+p),0
+LINE (199,72+p)-(180,74+p),0
+LINE -(178,50+p),0
+LINE -(184,47+p),0
+LINE -(186,42+p),0
+LINE -(186,39+p),0
+LINE -(196,40+p),0
+LINE -(196,34+p),0
+LINE -(201,29+p),0
+LINE -(214,27+p),0
+LINE -(215,13+p),0
+LINE -(217,15+p),0
+LINE -(219,13+p),0
+LINE -(227,26+p),0
+LINE -(217,36+p),0
+LINE -(217,43+p),0
+LINE -(222,50+p),0
+LINE -(214,54+p),0
+LINE -(210,59+p),0
+LINE -(214,56+p),0
+LINE -(210,61+p),0
+LINE -(206,71+p),0
+LINE -(202,69+p),0
+LINE -(206,73+p),0
+LINE -(203,85+p),0
+LINE -(201,86+p),0
+LINE -(199,77+p),0
+LINE -(199,72+p),0
+LINE (58,85+p)-(57,86+p),0
+LINE -(45,86+p),0
+LINE -(40,106+p),0
+LINE -(55,115+p),0
+LINE -(68,118+p),0
+LINE -(68,112+p),0
+LINE -(78,114+p),0
+LINE -(78,113+p),0
+LINE -(93,114+p),0
+LINE -(96,87+p),0
+LINE -(58,85+p),0
+LINE (64,12+p)-(59,-1+p),0
+LINE -(16,-1+p),0
+LINE -(20,10+p),0
+LINE -(30,10+p),0
+LINE -(64,12+p),0
+ALBERTASASKATCHANMANITOBA:
+LINE (64,12+p)-(59,-1+p),0
+LINE -(130,-1+p),0
+LINE -(127,15+p),0
+LINE -(64,12+p),0
+ONTARIO:
+LINE (130,-1+p)-(127,15+p),0
+LINE -(140,16+p),0
+LINE -(145,10+p),0
+LINE -(151,10+p),0
+LINE -(154,14+p),0
+LINE -(159,13+p),0
+LINE -(162,22+p),0
+LINE -(173,24+p),0
+LINE -(182,20+p),0
+LINE -(177,24+p),0
+LINE -(182,28+p),0
+LINE -(176,29+p),0
+LINE -(176,38+p),0
+LINE -(173,47+p),0
+LINE -(185,41+p),0
+LINE -(186,39+p),0
+LINE -(184,39+p),0
+LINE -(186,39+p),0
+LINE -(184,39+p),0
+LINE -(186,36+p),0
+LINE -(195,32+p),0
+LINE -(196,34+p),0
+LINE -(201,29+p),0
+LINE -(185,20+p),0
+LINE -(185,-1+p),0
+LINE -(130,-1+p),0
+LINE (201,29+p)-(185,20+p),0
+LINE -(185,-1+p),0
+LINE -(210,-1+p),0
+LINE -(199,19+p),0
+LINE -(215,-1+p),0
+LINE -(226,-1+p),0
+LINE -(231,14+p),0
+LINE -(245,14+p),0
+LINE -(246,5+p),0
+LINE -(253,9+p),0 
+LINE -(240,25+p),0
+LINE -(236,33+p),0
+LINE -(233,32+p),0
+LINE -(233,27+p),0
+LINE -(236,16+p),0
+LINE -(227,26+p),0
+LINE -(219,13+p),0
+LINE -(217,15+p),0
+LINE -(215,13+p),0
+LINE -(214,27+p),0
+LINE -(201,29+p),0
+LINE (30,10+p)-(20,10+p),0
+LINE -(11,46+p),0
+LINE -(38,53+p),0
+LINE -(48,12+p),0
+LINE -(30,10+p),0
+LINE (50,55+p)-(38,53+p),0
+LINE -(11,46+p),0
+LINE -(10,55+p),0
+LINE -(15,92+p),0
+LINE -(25,95+p),0
+LINE -(30,105+p),0
+LINE -(40,106+p),0
+LINE -(45,86+p),0
+LINE -(57,86+p),0
+LINE -(58,85+p),0
+LINE -(47,84+p),0
+LINE -(50,55+p),0
+LINE (48,12+p)-(38,53+p),0
+LINE -(62,58+p),0
+LINE -(61,64+p),0
+LINE -(89,66+p),0
+LINE -(90,45+p),0
+LINE -(63,42+p),0
+LINE -(63,43+p),0
+LINE -(58,43+p),0
+LINE -(50,12+p),0
+LINE -(48,12+p),0
+LINE (90,45+p)-(91,14+p),0
+LINE (58,85+p)-(96,87+p),0
+LINE -(99,88+p),0
+LINE -(100,67+p),0
+LINE -(89,66+p),0
+LINE -(61,64+p),0
+FARBPALETTE:
+PALETTE 0,0,0,0
+PALETTE 1,1,1,1 :REM weiﬂ
+PALETTE 2,0,0,0 :REM schwarz
+PALETTE 3,1,0,0 :REM rot
+PALETTE 4,0,0,1 :REM blau
+PALETTE 5,.2,.2,.6 :REM grau-blau
+PALETTE 6,1,1,1 :REM weiﬂ
+PALETTE 7,1,1,0 :REM gelb
+PALETTE 8,1,.5,0:REM orange
+PALETTE 12,.4,.4,1 :REM blau-grau
+PALETTE 15,0,.7,0 :REM gruen
+PAINT (2,2),4,0
+KOMPASS:
+COLOR 15,0
+x=240
+y=100
+LINE (20+x,20+y)-(25+x,5+y)
+LINE-(30+x,20+y)
+LINE-(45+x,25+y)
+LINE-(30+x,30+y)
+LINE-(25+x,45+y)
+LINE-(20+x,30+y)
+LINE-(5+x,25+y)
+LINE-(20+x,20+y)
+COLOR 1
+LINE (25+x,5+y)-(25+x,45+y)
+LINE (5+x,25+y)-(45+x,25+y)
+COLOR 4
+LINE (10+x,10+y)-(20+x,20+y)
+LINE (10+x,40+y)-(20+x,30+y)
+LINE (40+x,10+y)-(30+x,20+y)
+LINE (30+x,30+y)-(40+x,40+y)
+COLOR 3
+LINE (10+x,15+y)-(10+x,10+y)
+LINE-(15+x,10+y)
+LINE (40+x,15+y)-(40+x,10+y)
+LINE-(35+x,10+y)
+LINE (10+x,35+y)-(10+x,40+y)
+LINE-(15+x,40+y)
+LINE (40+x,35+y)-(40+x,40+y)
+LINE-(35+x,40+y)
+COLOR 6
+LOCATE 12,34:PRINT "N" 
+LOCATE 19,34:PRINT "S"
+LOCATE 16,31:PRINT "W"
+LOCATE 16,37:PRINT "O"
+WAL:
+COLOR 5
+x=120
+y=15
+a=2
+LINE ((1+x)*a,(6+y)*a)-((2+x)*a,(5+y)*a)
+LINE-((13+x)*a,(5+y)*a)
+LINE-((14+x)*a,(4+y)*a)
+LINE-((14+x)*a,(5+y)*a)
+LINE-((15+x)*a,(4+y)*a)
+LINE-((15+x)*a,(5+y)*a)
+LINE-((16+x)*a,(4+y)*a)
+LINE-((16+x)*a,(5+y)*a)
+LINE-((17+x)*a,(5+y)*a)
+LINE-((18+x)*a,(4+y)*a)
+LINE-((19+x)*a,(3+y)*a)
+LINE-((19+x)*a,(2+y)*a)
+LINE-((20+x)*a,(1+y)*a)
+LINE-((21+x)*a,(1+y)*a)
+LINE-((20+x)*a,(3+y)*a)
+LINE-((22+x)*a,(2+y)*a)
+LINE-((22+x)*a,(3+y)*a)
+LINE-((21+x)*a,(4+y)*a)
+LINE-((20+x)*a,(4+y)*a)
+LINE-((20+x)*a,(5+y)*a)
+LINE-((16+x)*a,(9+y)*a)
+LINE-((6+x)*a,(9+y)*a)
+LINE-((4+x)*a,(11+y)*a)
+LINE-((6+x)*a,(9+y)*a)
+LINE-((2+x)*a,(9+y)*a)
+LINE-((1+x)*a,(8+y)*a)
+LINE-((1+x)*a,(6+y)*a) 
+COLOR 12
+PAINT ((21+x)*a,(3+y)*a),5,5 
+PAINT ((8+x)*a,(7+y)*a),5,5
+COLOR 3
+PSET ((6+x)*a,(8+y)*a)
+COLOR 3,4:LOCATE 22,1:PRINT  " Ruﬂland "
+COLOR 15,4:LOCATE 23,1:PRINT " England "
+COLOR 8,4:LOCATE 24,1:PRINT " USA "
+COLOR 7,4:LOCATE 25,1:PRINT " Spanien "
+COLOR 1,4:LOCATE 26,1:PRINT " Frankreich"
+SPRUDELWASSER:
+COLOR 12
+mmmmmm=MOUSE(0)
+WHILE mmmmmm=0:mmmmmm=MOUSE(0)
+LINE ((5+x)*a,(5+y)*a)-((5+x)*a,(3+y)*a)
+FOR i=0 TO 300:NEXT i
+LINE ((5+x)*a,(3+y)*a)-((4+x)*a,(2+y)*a)
+LINE ((5+x)*a,(3+y)*a)-((6+x)*a,(2+y)*a)
+FOR i=0 TO 300:NEXT i
+LINE ((5+x)*a,(3+y)*a)-((3+x)*a,(3+y)*a)
+LINE ((5+x)*a,(3+y)*a)-((7+x)*a,(3+y)*a)
+FOR i=0 TO 300:NEXT i
+LINE ((5+x)*a,(5+y)*a)-((5+x)*a,(3+y)*a),4
+PSET ((5+x)*a,(5+y)*a),0
+FOR i=0 TO 300:NEXT i
+LINE ((5+x)*a,(3+y)*a)-((4+x)*a,(2+y)*a),4
+LINE ((5+x)*a,(3+y)*a)-((6+x)*a,(2+y)*a),4
+FOR i=0 TO 300:NEXT i
+LINE ((5+x)*a,(3+y)*a)-((3+x)*a,(3+y)*a),4
+LINE ((5+x)*a,(3+y)*a)-((7+x)*a,(3+y)*a),4
+FOR i=0 TO 300:NEXT i
+WEND
+weiter:
+COLOR 12
+LINE ((5+x)*a,(5+y)*a)-((5+x)*a,(3+y)*a)
+LINE ((5+x)*a,(3+y)*a)-((4+x)*a,(2+y)*a)
+LINE ((5+x)*a,(3+y)*a)-((6+x)*a,(2+y)*a)
+LINE ((5+x)*a,(3+y)*a)-((3+x)*a,(3+y)*a)
+LINE ((5+x)*a,(3+y)*a)-((7+x)*a,(3+y)*a)
